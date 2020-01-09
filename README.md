@@ -3,5 +3,6 @@
 ### String variable to file
 ```
 var="foo"
-echo "$var" >> "$destdir"
+filepath=/users/me/home/text.txt
+echo "$var" >> "$filepath"
 ```
