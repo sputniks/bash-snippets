@@ -37,3 +37,8 @@ bash script.sh
 ```
 ssh $HOST < script.sh
 ```
+#### 
+cat << EOF
+The current working directory is: $PWD
+You are logged in as: $(whoami)
+EOF
