@@ -24,3 +24,7 @@ eval $cmd
 ```
 echo $cmd > test_file
 ```
+#### Run the cmd file locally
+```
+bash test_file
+```
