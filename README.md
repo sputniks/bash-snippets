@@ -16,3 +16,7 @@ pwd;
 hostname;
 "
 ```
+#### Then run to test it
+```
+eval $cmd
+```
