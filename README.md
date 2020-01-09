@@ -20,3 +20,7 @@ hostname;
 ```
 eval $cmd
 ```
+#### Write context of the variable to file
+```
+echo $cmd > test_file
+```
