@@ -1,5 +1,10 @@
 # bash-snippets
 
+### Define HOST variable to use with SSH calls
+```
+HOST="localhost"
+```
+
 ### String variable to file
 ```
 var="foo"
@@ -22,9 +27,13 @@ eval $cmd
 ```
 #### Write context of the variable to file
 ```
-echo $cmd > test_file
+echo $cmd > script.sh
 ```
 #### Run the cmd file locally
 ```
-bash test_file
+bash script.sh
+```
+#### Run the cmd file remotely with SSH
+```
+ssh $HOST < script.sh
 ```
