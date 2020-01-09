@@ -6,3 +6,13 @@ var="foo"
 filepath=/users/me/home/text.txt
 echo "$var" >> "$filepath"
 ```
+### SSH and remotely run commands defined in the script
+
+#### Create cmd script with first declaring string variable
+```
+cmd="
+ls;
+pwd;
+hostname;
+"
+```
