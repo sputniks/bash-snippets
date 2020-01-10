@@ -59,3 +59,15 @@ echo $VAR2
 
 EOSSH
 ```
+#### Mixing the local and remote variables. 
+```
+LOCAL_VAR_1="LOCAL_VAR_1_VALUE"
+
+ssh -T $HOST << EOSSH
+echo $LOCAL_VAR_1
+
+REMOTE_VAR_1=`pwd`
+echo \$REMOTE_VAR_1
+
+EOSSH
+```
