@@ -48,3 +48,14 @@ EOF
 ```
 VAR2=$(uname -a)
 ```
+#### Local and remote variable assignements
+```
+ssh -T $HOST <<'EOSSH'
+VAR1=`pwd`
+echo $VAR1
+
+VAR2=$(uname -a)
+echo $VAR2
+
+EOSSH
+```
