@@ -71,3 +71,23 @@ echo \$REMOTE_VAR_1
 
 EOSSH
 ```
+
+and 
+```
+LOCAL_VAR_1="LOCAL_VAR_1_VALUE"
+
+ssh -T $HOST <<'EOSSH'
+REMOTE_VAR_1=`pwd`
+echo \$REMOTE_VAR_1
+echo "\$REMOTE_VAR_1"
+echo "The value of the REMOTE_VAR_1 is \$REMOTE_VAR_1"
+
+REMOTE_VAR_2=$(uname -a)
+echo \$REMOTE_VAR_2
+echo "\$REMOTE_VAR_2"
+echo "The value of the REMOTE_VAR_2 is \$REMOTE_VAR_2"
+
+echo "The value of the LOCAL_VAR_1 is $LOCAL_VAR_1"
+
+EOSSH
+```
