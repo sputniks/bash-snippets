@@ -44,3 +44,7 @@ The current working directory is: $PWD
 You are logged in as: $(whoami)
 EOF
 ```
+#### Assign the output of command to variable
+```
+VAR2=$(uname -a)
+```
